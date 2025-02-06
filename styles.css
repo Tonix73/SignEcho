@@ -1,0 +1,248 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* MODOS OSCURO Y CLARO */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* HEADER Y NAVEGACIÓN */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ffcc;
+}
+
+/* BOTÓN DE TEMA */
+#theme-toggle {
+    background: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+body.dark-mode #theme-toggle {
+    background: #000;
+    color: #fff;
+}
+
+/* HERO CON ANIMACIÓN */
+.hero {
+    margin-top: 50px;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 36px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.hero p {
+    margin: 15px 0;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-10px); }
+    to { transform: translateY(0); }
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #fff;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Animación de Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00aaff;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background: linear-gradient(45deg, #00aaff, #0066ff);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 170, 255, 0.6);
+}
+
+/* Sección de Descargas */
+.downloads {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Formulario de Apoyo */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Ajustar el tamaño del logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+/* Ajustar imágenes de Redes Sociales */
+.social {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.social img {
+    width: 50px; /* Tamaño fijo para redes sociales */
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}

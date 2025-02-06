@@ -1,0 +1,212 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    text-align: center;
+}
+
+/*Lit*/
+body.light-mode {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff ; /* Fondo oscuro */
+    color: #00bcd4; /* Texto claro */
+    text-align: center;
+}
+
+/*LOGO*/
+/* Ajusta el tamaño del logo */
+header .logo-img {
+    height: 40px;  /* Ajusta la altura del logo */
+    width: auto;   /* Mantiene la proporción del logo */
+}
+
+/* --- Header y Navegación --- */
+header {
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.logo-img {
+    width: 120px;  /* Ajusta el tamaño del logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00bcd4;
+}
+
+#theme-toggle {
+    background-color: #00bcd4;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header #theme-toggle:hover {
+    background-color: #008c99;
+}
+
+/* --- Sección Descargas --- */
+.downloads {
+    padding: 60px 20px;
+}
+
+.downloads h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.downloads p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background: #00bcd4;
+    color: #121212;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0288a2;
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #1e1e1e;
+    padding: 15px;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+/* Agregar un poco de espacio al final */
+footer {
+    margin-top: 40px;
+}
+
+/* --- Animación de Fade-in --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Diseño Responsivo --- */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .downloads h1 {
+        font-size: 1.5rem;
+    }
+
+    .downloads p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Adaptación para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header ul {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
